@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PsyGo • Psicologia Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+
+
+  <header class="topbar glass">
+    <div class="brand">
+      <i class='bx bx-brain spin'></i>
+      <span>PsyGo</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active"><i class='bx bx-home-alt-2'></i><span>Início</span></a>
+      <a href="sobre.html" class="nav-link"><i class='bx bx-info-circle'></i><span>Sobre</span></a>
+      <a href="privacidade.html" class="nav-link"><i class='bx bx-shield-quarter'></i><span>Privacidade</span></a>
+    </nav>
+    <a class="btn primary sm" href="perfil.html"><i class='bx bx-user'></i> Entrar</a>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="hero-card glass">
+      <div class="hero-icon"><i class='bx bx-user-voice'></i></div>
+      <h1>Consultas online com psicólogos certificados</h1>
+      <p>Encontre terapia de qualidade, no seu idioma, quando você precisar.</p>
+
+      <div class="searchbar">
+        <i class='bx bx-search'></i>
+        <input id="searchInput" type="search" placeholder="Buscar psicólogo, CRP ou palavra-chave…" />
+      </div>
+
+      <div class="chips" id="chips">
+        <button class="chip active" data-value="todos">Todas</button>
+        <button class="chip" data-value="ansiedade">Ansiedade</button>
+        <button class="chip" data-value="depressao">Depressão</button>
+        <button class="chip" data-value="casal">Terapia de casal</button>
+        <button class="chip" data-value="tdah">TDAH</button>
+        <button class="chip" data-value="luto">Luto</button>
+        <button class="chip" data-value="burnout">Burnout</button>
+      </div>
+
+      <div class="meta">
+        <div class="meta-item"><i class='bx bx-laptop'></i> 100% online</div>
+        <div class="meta-item"><i class='bx bx-award'></i> Profissionais verificados</div>
+        <div class="meta-item"><i class='bx bx-lock-alt'></i> Sigilo e segurança</div>
+        <div class="meta-item"><i class='bx bx-message-rounded-dots'></i> Abordagens diversas</div>
+      </div>
+    </div>
+
+    <div class="hero-visual glass">
+      <img alt="Sessão de terapia" src="img/psi1.jpg" />
+      <div class="badge-video"><i class='bx bx-video'></i> Vídeo • Áudio • Chat</div>
+    </div>
+  </section>
+
+
+  <section class="grid">
+    <aside class="sidebar glass">
+      <h3>Filtros</h3>
+
+      <div class="field">
+        <label>Especialização</label>
+        <select id="selectEspecializacao">
+          <option value="todos">Todas</option>
+          <option value="ansiedade">Ansiedade</option>
+          <option value="depressao">Depressão</option>
+          <option value="casal">Terapia de casal</option>
+          <option value="tdah">TDAH</option>
+          <option value="luto">Luto</option>
+          <option value="burnout">Burnout</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Preço</label>
+        <input type="range" id="priceRange" min="60" max="300" value="300" />
+        <div class="hint">Até R$ <span id="priceOut">300</span></div>
+      </div>
+
+      <div class="field">
+        <label>Idioma</label>
+        <div class="toggles">
+          <label class="toggle"><input type="checkbox" value="pt" checked /><span>Português</span></label>
+          <label class="toggle"><input type="checkbox" value="en" /><span>Inglês</span></label>
+          <label class="toggle"><input type="checkbox" value="es" /><span>Espanhol</span></label>
+        </div>
+      </div>
+
+      <button id="clearFilters" class="btn ghost full"><i class='bx bx-eraser'></i> Limpar filtros</button>
+    </aside>
+
+    <div class="cards" id="cards"><!-- via JS --></div>
+  </section>
+
+  <!-- NAV MOBILE -->
+  <nav class="bottom-nav glass">
+    <a class="active" href="index.html"><i class='bx bx-home-alt-2'></i><span>Início</span></a>
+    <a href="agenda.html"><i class='bx bx-calendar'></i><span>Agenda</span></a>
+    <a href="sobre.html"><i class='bx bx-info-circle'></i><span>Sobre</span></a>
+    <a href="perfil.html"><i class='bx bx-user'></i><span>Perfil</span></a>
+  </nav>
+
+  <footer class="footer">
+    <div>© 2025 Psygo</div>
+   
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

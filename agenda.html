@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda • PsyGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="agenda">
+    <header class="topbar glass">
+        <div class="brand"><i class='bx bx-brain spin'></i><span> PsyGo</span></div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link active"><i class='bx bx home-alt-2'></i><span>Início</span></a>
+            <a href="sobre.html" class="nav-link"><i class='bx bx-info-circle'></i><span>Sobre</span></a>
+            <a href="privacidade.html" class="nav-link"><i class='bx bx-shield-quarter'></i><span>Privacidade</span></a>
+        </nav>
+        <a class="btn primary sm" href="perfil.html"><i class='bx bx-user'></i> Perfil</a>
+    </header>
+
+    <main class="container">
+        <div class="modal-dialog glass" style="max-width: 980px; margin: 24px auto;">
+            <div class="doctor">
+                <div class="avatar" id="agAvatar"></div>
+                <div class="info">
+                    <h3 id="agName"> Profissional</h3>
+                    <small id="agSub"> CRP • Especialidade </small>
+                    <div class="stars" id="agStars"></div>
+                </div>
+            </div>
+
+            <div class="calendar" id="calendar"></div>
+            <div class="times" id="times"></div>
+
+            <div class="row">
+                <a class="btn ghost" href="index.html"><i class='bx bx-left-arrow-alt'></i>Voltar</a>
+                <button class="btn primary" id="confirmAg"><i class='bx bx-calendar-check'></i> Confirmar</button>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav glass">
+        <a href="index.html"><i class='bx bx-home-alt-2'></i><span>Início</span></a>
+        <a class="active" href="agenda.html"><i class='bx bx-calendar'></i><span>Agenda</span></a>
+        <a href="sobre.html"><i class='bx bx-info-circle'></i><span>Sobre</span></a>
+        <a href="perfil.html"><i class='bx bx-user'></i><span>Perfil</span></a>
+    </nav>
+
+    <script src="app.js""></script>
+</body>
+
+</html>
